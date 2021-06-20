@@ -2,7 +2,7 @@ Pokemon web app made with React.js
 Resources:
 * Api - [PokeApi](https://pokeapi.co)
 * Npm - 1. [axios](https://www.npmjs.com/package/axios)
-        1. [react-use](https://www.npmjs.com/package/react-use)
+        2. [react-use](https://www.npmjs.com/package/react-use)
 
 
 ## Available Scripts
