@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+Pokemon web app made with React.js
+Resources:
+* Api - [PokeApi](https://pokeapi.co)
+* Npm - 1. [axios](https://www.npmjs.com/package/axios)
+        1. [react-use](https://www.npmjs.com/package/react-use)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
