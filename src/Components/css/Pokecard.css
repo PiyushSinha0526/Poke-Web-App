@@ -1,0 +1,128 @@
+  /* PokeCard Css */
+.poke_card {
+  position: relative;
+  width: 100%;
+  min-height: 457.406px;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 250px;
+  transition: all 0.2 ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.poke_card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: scale(1.01);
+}
+
+.poke_card-number {
+  position: absolute;
+  border-radius: 15px;
+  right: 0;
+  top: 6px;
+  margin: 0.3rem;
+  padding: 0 0.5rem;
+  z-index: 50;
+  background-color: white;
+}
+
+.poke_card-name_img {
+  margin: 0 0.15rem;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.poke_card-img {
+  position: relative;
+  margin: 0 0 0.5rem;
+  border-radius: 15px;
+  background-color: var(--clr-side-bg);
+  box-shadow: 0px 2.5px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+.poke_card-img::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--clr-main-bg);
+}
+
+.poke_card-img > img {
+  position: relative;
+  z-index: 9;
+  filter: drop-shadow(0 7px 4px hsl(0, 0%, 13%));
+}
+
+.poke_card-name_img h3 {
+  margin-top: -33px;
+  font-size: clamp(0.5rem, 1rem, 1.755rem);
+  z-index: 2;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  background-color: rgb(255, 255, 255);
+  /* border-bottom: 1px solid rgb(104, 104, 104); */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.poke_card-types {
+  margin: 0.5rem 0;
+
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.poke_card-type {
+  color: black;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+}
+
+.poke_card-details {
+  text-align: center;
+  margin-bottom: 0.6rem;
+  color: rgb(92, 92, 92);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.poke_card-details span {
+  font-weight: 700;
+  color: rgb(37, 37, 37);
+}
+
+.poke_card-details--sub {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.loading {
+  font-weight: 900;
+  text-align: center;
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.navbar {
+    padding: 0.3rem;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.logo{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    font-weight: 700;
+    color:  rgb(255, 203, 5);
+    letter-spacing: 0.2rem;
+    text-shadow: 1px 1px 4px rgb(42, 117, 187),
+    0px 0px 4px rgb(42, 117, 187);
+}
+.navbar_select-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.navbar_search {
+    color: #808080;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+}
+
+
+.navbar_custom-select {
+    border: none;
+    outline: none;
+    appearance: none;
+    color: grey;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 0.5rem 1.6rem 0.5rem 0.5rem;
+    box-shadow: 0px 0px 0px 1px rgb(0, 0, 0);
+}
+
+.navbar_select {
+    position: relative;
+}
+.navbar_select::before,
+.navbar_select::after {
+    content: '🞃';
+    position: absolute;
+    right: 8px;
+    pointer-events: none;
+}
+.navbar_select::before {
+    top: 47%;
+    transform: translate(0 ,-50%) rotateZ(180deg);
+    
+}
+.navbar_select::after {
+    bottom: 47%;
+    transform: translate(0 ,50%);
+}
